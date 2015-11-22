@@ -74,7 +74,7 @@
 (defvar cppkoans-edit-field-face 'cppkoans-edit-field-face)
 
 (defconst cppkoans-re-edit-field
-  "\\b\\(?:EXPECT\\|ASSERT\\)_[A-Z_0-9]+\\s-*(.*?\\(__+\\)")
+  "\\b\\(?:\\(?:EXPECT\\|ASSERT\\)_[A-Z_0-9]+\\|ACKNOWLEDGE\\)\\s-*(.*?\\(__+\\)")
 
 (defconst cppkoans-font-lock-keywords
   (list
