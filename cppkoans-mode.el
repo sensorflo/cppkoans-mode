@@ -5,9 +5,9 @@
 ;; Author: Florian Kaufmann <sensorflo@gmail.com>
 ;; URL: https://github.com/sensorflo/cppkoans-mode
 ;; Created: 2014
-;; 
+;;
 ;; This file is not part of GNU Emacs.
-;; 
+;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation; either version 2, or (at your option)
@@ -22,10 +22,10 @@
 ;; along with this program; see the file COPYING.  If not, write to
 ;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth
 ;; Floor, Boston, MA 02110-1301, USA.
-;; 
-;; 
+;;
+;;
 ;;; Commentary:
-;; 
+;;
 ;; cppkoans, see https://github.com/sensorflo/cppkoans, are a set of little
 ;; exercises to improve and strengthen your knowledge of C++. The exercises are
 ;; in the form of regular code, which is to be edited in place. cppkoans-mode
@@ -34,35 +34,35 @@
 ;;
 ;; Installation
 ;; ------------
-;; 
+;;
 ;; 1. Copy the file cppkoans-mode.el to a directory in your load-path, e.g.
 ;;    ~/.emacs.d.
-;; 
+;;
 ;; 2. Add either of the two following lines to your initialization file. The
 ;;    first only loads cppkoans mode when necessary, the 2nd always during
 ;;    startup of Emacs.
-;; 
+;;
 ;;    * (autoload 'cppkoans-mode "cppkoans-mode")
 ;;      (autoload 'cppkoans-koans-buffer-p "cppkoans-mode")
-;; 
+;;
 ;;    * (require 'cppkoans-mode)
-;; 
+;;
 ;; 3.1 To use cppkoans-mode, manually call cppkoans-mode after you opened an C++
 ;;     file containing cppkoans: `M-x cppkoans-mode`
-;; 
+;;
 ;; 3.2 To automatically get cppkoans-mode enabled, put the following in your
 ;;     initialization file (probably ~/.emacs):
-;; 
+;;
 ;;     (add-hook 'find-file-hook
 ;;       (lambda() (if (cppkoans-koans-buffer-p) (cppkoans-mode))))
-;; 
-;; 
+;;
+;;
 ;; Todo
 ;; ----
 ;; - TC++PL / TStd / koans internal links / ... etc -> links to external
 ;;   documents
 ;; - mode-alist or so for minor modes?
-;; 
+;;
 ;;; Code:
 (defgroup cppkoans nil "See (finder-commentary \"cppkoans-mode\")")
 
